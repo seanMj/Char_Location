@@ -36,3 +36,4 @@ void char_pos(std::vector<char>& alphabet, std::string& filename, int& alpha_cou
 //data would look after it was graphed and i was correct it looks cool, its a fingerprint of text data in a weird way
 //this is a rather complicated example here - not for children's eyes - this could scare a kid from
 //programming ever again lol 
+
