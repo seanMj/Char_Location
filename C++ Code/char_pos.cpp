@@ -3,8 +3,8 @@
 #include <vector>
 #include <cctype>
 #include <string>
-//..
 using std::endl;	using std::cout;
+//...
 void char_pos(std::vector<char>& alphabet, std::string& filename, int& alpha_count)
 {
 	std::ifstream file;					//open a object named "file" from the class fstream
