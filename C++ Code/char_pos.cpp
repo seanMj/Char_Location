@@ -7,7 +7,7 @@ using std::endl;	using std::cout;
 //...
 void char_pos(std::vector<char>& alphabet, std::string& filename, int& alpha_count)
 {
-	std::ifstream file;					//open a object named "file" from the class fstream
+	std::ifstream file;					//open a variable named "file" form the class ifstream
 	file.open(filename);				//use the "file" handle to open a file from the filesystem	
 
 	std::string temp = " ";				//temp. string (group of characters to hold the filename the user provides from main
