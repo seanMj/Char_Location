@@ -22,8 +22,8 @@ void char_pos(std::vector<char>& alphabet, std::string& filename, int& alpha_cou
 				i = tolower(i);					//the letter was uppercase, its now lowercase 
 			if(alphabet[alpha_count] == i)		//if the current letter in the vector is equal to the one were looking at
 			{
-				a_cnt = cnt;												//update the value of a_cnt with the new location of the character
-				cout << alphabet[alpha_count] << ' ' << a_cnt << '\n';		//print the result of the char and location
+				a_cnt = cnt;											//update the value of a_cnt with the new location of the character
+				cout << alphabet[alpha_count] << ' ' << a_cnt << '\n';	//print the result of the char and location
 			}
 			cnt += 1;		//increment the value of cnt with 1 each loop to update the next location
 							//...should it be found
