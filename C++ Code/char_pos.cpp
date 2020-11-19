@@ -7,26 +7,26 @@
 using std::endl;	using std::cout;
 void char_pos(std::vector<char>& alphabet, std::string& filename, int& alpha_count)
 {
-	std::ifstream file;		//open a object named "file" from the class fstream
-	file.open(filename);	//use the "file" handle to open a file from the filesystem	
+	std::ifstream file;					//open a object named "file" from the class fstream
+	file.open(filename);				//use the "file" handle to open a file from the filesystem	
 
-	std::string temp = " ";	//temp. string (group of characters to hold the filename the user provides from main
-	int a_cnt = 0;			//a_cnt is used to hold the current count location.
-	int cnt = 0;			//count is used to find the location for the current letter being searched for
+	std::string temp = " ";				//temp. string (group of characters to hold the filename the user provides from main
+	int a_cnt = 0;						//a_cnt is used to hold the current count location.
+	int cnt = 0;						//count is used to find the location for the current letter being searched for
 
-	while(getline(file, temp))	//read until the end of the file, while not at end of file, place each word in temp
+	while(getline(file, temp))					//read until the end of the file, while not at end of file, place each word in temp
 	{
-		for(auto& i : temp)					//go through the word [w] [o] [r] [d] one letter at a time 
+		for(auto& i : temp)						//go through the word [w] [o] [r] [d] one letter at a time 
 		{
-			if(isupper(i))					//if the letter is uppercase, make lowercase
-				i = tolower(i);				//the letter was uppercase, its now lowercase 
-			if(alphabet[alpha_count] == i)	//if the current letter in the vector is equal to the one were looking at
+			if(isupper(i))						//if the letter is uppercase, make lowercase
+				i = tolower(i);					//the letter was uppercase, its now lowercase 
+			if(alphabet[alpha_count] == i)		//if the current letter in the vector is equal to the one were looking at
 			{
-				a_cnt = cnt;			//update the value of a_cnt with the new location of the character
-				cout << alphabet[alpha_count] << ' ' << a_cnt << '\n';	//print the result of the char and location
+				a_cnt = cnt;												//update the value of a_cnt with the new location of the character
+				cout << alphabet[alpha_count] << ' ' << a_cnt << '\n';		//print the result of the char and location
 			}
-			cnt += 1;						//increment the value of cnt with 1 each loop to update the next location
-											//...should it be found
+			cnt += 1;		//increment the value of cnt with 1 each loop to update the next location
+							//...should it be found
 		}
 	}
 }
