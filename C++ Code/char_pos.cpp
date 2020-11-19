@@ -29,6 +29,7 @@ void char_pos(std::vector<char>& alphabet, std::string& filename, int& alpha_cou
 						//...should it be found
 		}
 	}
+	file.close();				//close the file at the end of every use. - impact = low;
 }
 
 //here is an example of C++ I wrote today, just to give an idea of what computer science will look like.
